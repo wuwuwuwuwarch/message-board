@@ -1,0 +1,72 @@
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee
+                             http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+         version="3.1">
+
+    <welcome-file-list>
+        <welcome-file>index.jsp</welcome-file>
+    </welcome-file-list>
+
+    <servlet>
+        <servlet-name>jsp</servlet-name>
+        <servlet-class>org.apache.jasper.servlet.JspServlet</servlet-class>
+        <init-param>
+            <param-name>fork</param-name>
+            <param-value>false</param-value>
+        </init-param>
+        <init-param>
+            <param-name>Xss</param-name>
+            <param-value>true</param-value>
+        </init-param>
+        <load-on-startup>3</load-on-startup>
+    </servlet>
+
+    <servlet>
+        <servlet-name>AddNoteServlet</servlet-name>
+        <servlet-class>Servlet.AddNoteServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AddNoteServlet</servlet-name>
+        <url-pattern>/AddNoteServlet</url-pattern>
+    </servlet-mapping>
+
+
+
+    <servlet>
+        <servlet-name>DeleteNoteByIdServlet</servlet-name>
+        <servlet-class>Servlet.DeleteNoteByIdServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>DeleteNoteByIdServlet</servlet-name>
+        <url-pattern>/DeleteNoteByIdServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>LoginServlet</servlet-name>
+        <servlet-class>Servlet.LoginServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>LoginServlet</servlet-name>
+        <url-pattern>/LoginServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>QueryNoteByIdServlet</servlet-name>
+        <servlet-class>Servlet.QueryNoteByIdServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>QueryNoteByIdServlet</servlet-name>
+        <url-pattern>/QueryNoteByIdServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>UpdateNoteServlet</servlet-name>
+        <servlet-class>Servlet.UpdateNoteServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>UpdateNoteServlet</servlet-name>
+        <url-pattern>/UpdateNoteServlet</url-pattern>
+    </servlet-mapping>
+
+</web-app>
