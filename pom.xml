@@ -5,9 +5,9 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.example</groupId>
-    <artifactId>_202203049135_messageboard</artifactId>
+    <artifactId>_message-board</artifactId>
     <version>1.0-SNAPSHOT</version>
-    <name>202203049135_messageboard</name>
+    <name>message-board</name>
     <packaging>war</packaging>
 
     <properties>
