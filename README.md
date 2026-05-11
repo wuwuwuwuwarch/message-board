@@ -52,7 +52,7 @@ The web views consist of five JSP pages:
 
 ## Database Schema
 
-The application uses a MySQL database named `202203049135_messageboard` with a single table `note`:
+The application uses a MySQL database named `_messageboard` with a single table `note`:
 
 ```sql
 CREATE TABLE note (
@@ -83,7 +83,7 @@ CREATE TABLE note (
 
 3. **Deploy**: Deploy the generated WAR file to your Servlet container. For Tomcat, copy the WAR file to the `webapps/` directory and start (or restart) the server.
 
-4. **Access the Application**: Navigate to `http://localhost:8080/202203049135_messageboard/` (the exact URL depends on your server configuration and the WAR file name).
+4. **Access the Application**: Navigate to `http://localhost:8080/_messageboard/` (the exact URL depends on your server configuration and the WAR file name).
 
 ### Default Admin Credentials
 
